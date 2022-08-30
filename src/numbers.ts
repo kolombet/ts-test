@@ -1,9 +1,21 @@
-export default {
-  valueAtBit: (num = 0, bit = 0) => (num >> (bit - 1)) & 1,
+export default class Numbers {
+  /* Вернуть значение бита N в числе num */
+  valueAtBit(num = 0, bit = 0) {
+    return 0;
+  }
 
-  base10: (str = "") => parseInt(str, 2),
+  /* Сконвертировать двоичное число хранящееся в виде строки в число в 10 системе исчисления */
+  base10(str = "") {
+    return 0;
+  }
 
-  convertToBinary: (num = 0) => num.toString(2).padStart(8, "0"),
+  /* Вернуть двоичное представление числа num в виде строки */
+  convertToBinary(num = 0) {
+    return '';
+  }
 
-  multiply: (a = 0, b = 0) => +(a * b).toFixed(15),
-};
+  /* Перемножить два очень больших числа превышающих точность */
+  multiply(a = 0, b = 0) {
+    return 0;
+  }
+}
