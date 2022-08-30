@@ -1,7 +1,12 @@
 export default class Arrays<T> {
   /* Найти индекс первый совпадающего с val элемента в массиве */
   indexOf(arr: T[], val: T): number {
-    return 0;
+    // return arr.indexOf(val);
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === val)
+        return i;
+    }
+    return -1;
   }
 
   /* Суммировать все элементы массива */
@@ -40,7 +45,7 @@ export default class Arrays<T> {
   }
 
   /* Объеденить элементы двух массивов в новом массиве */
-  concat(arr1: T[], arr2: T[]): T[] {
+  concat(arr1: (string|number)[], arr2: (string|number)[]): (string|number)[] {
     return [];
   }
 
